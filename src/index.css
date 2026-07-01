@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Tabular numbers for all data/metrics */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  /* Focus ring */
+  *:focus-visible {
+    outline: 2px solid #8B1E2D;
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .container-s3 {
+    @apply max-w-container mx-auto px-6;
+  }
+
+  .container-wide {
+    @apply max-w-container-wide mx-auto px-6;
+  }
+}
+
+/* ============================================================
+   ANIMATIONS
+   Lightweight, GPU-composited, accessible
+   ============================================================ */
+
+/* Page transition (fade + slide on route change) */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section entrance (scroll-triggered) */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page enter animation */
+.animate-page-enter {
+  animation: fadeSlideIn 250ms ease-out both;
+  will-change: transform, opacity;
+}
+
+/* Intersection Observer entrance — visible by default, animates when in view */
+.animate-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              transform 500ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform, opacity;
+}
+.animate-inview.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered entrance delays */
+.animate-stagger-1 { transition-delay: 0ms; }
+.animate-stagger-2 { transition-delay: 100ms; }
+.animate-stagger-3 { transition-delay: 200ms; }
+.animate-stagger-4 { transition-delay: 300ms; }
+
+/* Accessibility: disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
