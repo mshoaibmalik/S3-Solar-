@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Logo variant="lockup" size={36} tone="mono-light" showTagline />
+            <Logo variant="lockup" size={36} tone="mono-light" showTagline showFullName />
             <p className="mt-4 text-sm text-slate-400 leading-relaxed">
               Premium solar installation across Pakistan — residential rooftop hybrid systems and turnkey commercial infrastructure.
             </p>

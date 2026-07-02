@@ -8,6 +8,7 @@ export function Logo({
   size = 32,
   tone = 'brand',
   showTagline = false,
+  showFullName = false,
   className = '',
   style,
   ...rest
@@ -39,7 +40,7 @@ export function Logo({
       color: wordColor,
       whiteSpace: 'nowrap',
     }}>
-      Sazuddin Solar
+      {showFullName ? 'Sazuddin Solar (Pvt) Ltd' : <><span style={{ color: accentColor }}>S</span><span style={{ color: accentColor }}>3</span><span style={{ fontWeight: 500, marginLeft: '0.12em', letterSpacing: '-0.01em' }}>Solar</span></>}
     </span>
   );
 
