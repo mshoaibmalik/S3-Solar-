@@ -32,8 +32,8 @@ export default function NetBillingExplained() {
           <p>Net billing is the regulatory framework introduced by NEPRA under the 2026 Alternative and Renewable Energy (ARE) Policy that governs how solar-equipped properties trade electricity with the national grid. Unlike the previous net metering regime (which offered a 1:1 unit offset at retail tariff), net billing compensates exported solar energy at a separate buyback rate determined by NEPRA.</p>
 
           <h2 className="font-display font-bold text-2xl text-slate-900 mt-8">Current rates (2026)</h2>
-          <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
-            <table className="w-full text-sm">
+          <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 overflow-x-auto">
+            <table className="w-full text-sm min-w-[320px]">
               <thead><tr className="border-b border-slate-200"><th className="text-left py-2 font-semibold text-slate-900">Metric</th><th className="text-right py-2 font-semibold text-slate-900">Value</th></tr></thead>
               <tbody>
                 <tr className="border-b border-slate-100"><td className="py-2">Average retail import tariff</td><td className="text-right font-mono">PKR 50–62 / kWh</td></tr>

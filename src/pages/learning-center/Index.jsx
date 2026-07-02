@@ -15,8 +15,8 @@ export default function LearningCenter() {
 
   return (
     <main>
-      <section ref={ref} className={`py-14 md:py-20 bg-gradient-to-br from-maroon-800 to-maroon-700 text-white animate-inview ${visible ? 'visible' : ''}`}>
-        <div className="max-w-container mx-auto px-6">
+      <section ref={ref} className={`relative min-h-[400px] md:min-h-[500px] flex items-center text-white animate-inview bg-gradient-to-br from-maroon-800 to-maroon-700 ${visible ? 'visible' : ''}`}>
+        <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
           <div className="max-w-3xl">
             <Badge tone="accent" variant="solid" className="mb-4">Knowledge Hub</Badge>
             <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight">

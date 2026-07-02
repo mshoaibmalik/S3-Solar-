@@ -84,7 +84,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-            <div className="hidden md:block">
+            <div>
               <img
                 src={besideTimeline}
                 alt="Sazuddin Solar System (Pvt) Ltd company timeline and growth"

@@ -192,7 +192,7 @@ export function SplitNav() {
         {/* Mobile menu button */}
         <button
           type="button"
-          className="md:hidden flex items-center justify-center w-11 h-11 text-slate-600"
+          className="md:hidden flex items-center justify-center w-11 h-11 text-slate-600 -mr-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
           aria-expanded={mobileOpen}

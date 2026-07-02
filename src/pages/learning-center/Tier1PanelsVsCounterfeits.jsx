@@ -7,8 +7,8 @@ export default function Tier1PanelsVsCounterfeits() {
 
   return (
     <main>
-      <section ref={ref} className={`py-14 md:py-20 bg-gradient-to-br from-maroon-800 to-maroon-700 text-white animate-inview ${visible ? 'visible' : ''}`}>
-        <div className="max-w-container mx-auto px-6">
+      <section ref={ref} className={`relative min-h-[400px] md:min-h-[500px] flex items-center text-white animate-inview bg-gradient-to-br from-maroon-800 to-maroon-700 ${visible ? 'visible' : ''}`}>
+        <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
           <div className="max-w-3xl">
             <Badge tone="accent" variant="solid" className="mb-4">Hardware Guide</Badge>
             <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight">Tier-1 Panels vs Counterfeits</h1>
@@ -34,8 +34,8 @@ export default function Tier1PanelsVsCounterfeits() {
           </div>
 
           <h2 className="font-display font-bold text-2xl text-slate-900 mt-8">Performance comparison</h2>
-          <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
-            <table className="w-full text-sm">
+          <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 overflow-x-auto">
+            <table className="w-full text-sm min-w-[320px]">
               <thead><tr className="border-b border-slate-200"><th className="text-left py-2 font-semibold text-slate-900">Metric</th><th className="text-right py-2 font-semibold text-slate-900">Tier-1</th><th className="text-right py-2 font-semibold text-slate-900">Counterfeit</th></tr></thead>
               <tbody>
                 <tr className="border-b border-slate-100"><td className="py-2">Efficiency</td><td className="text-right font-mono">21–23%</td><td className="text-right font-mono">14–17%</td></tr>

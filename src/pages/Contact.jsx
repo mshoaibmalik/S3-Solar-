@@ -65,26 +65,23 @@ export default function Contact() {
           </div>
 
           <h2 className="font-display font-bold text-2xl tracking-tight text-slate-900 mb-8 text-center">Regional Service Centers</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-4 animate-inview">
+          <div className="grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+            <div className="grid sm:grid-cols-2 md:grid-cols-1 gap-4 animate-inview">
               {centers.map((c, i) => (
-  <div
-    key={i}
-    className={`
-      bg-white border border-slate-200 rounded-xl p-5
-      ${i === 4 ? "md:col-start-3" : ""}
-    `}
-  >
-    <h3 className="font-display font-semibold text-base text-slate-900 mb-2">
-      {c.city}
-    </h3>
-    <p className="text-sm text-slate-500 mb-1">{c.address}</p>
-    <p className="text-sm font-mono text-maroon-700">{c.phone}</p>
-    <p className="text-xs text-slate-400 mt-1">{c.hours}</p>
-  </div>
-))}
+                <div
+                  key={i}
+                  className="bg-white border border-slate-200 rounded-xl p-5"
+                >
+                  <h3 className="font-display font-semibold text-base text-slate-900 mb-2">
+                    {c.city}
+                  </h3>
+                  <p className="text-sm text-slate-500 mb-1">{c.address}</p>
+                  <p className="text-sm font-mono text-maroon-700">{c.phone}</p>
+                  <p className="text-xs text-slate-400 mt-1">{c.hours}</p>
+                </div>
+              ))}
             </div>
-            <div className="hidden md:block">
+            <div>
               <img
                 src={nearRegionalCenters}
                 alt="Sazuddin Solar System (Pvt) Ltd regional service centers across Pakistan"
