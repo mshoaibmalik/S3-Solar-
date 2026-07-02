@@ -1,6 +1,7 @@
 import React from 'react';
 import { Badge } from '../components/ui/Badge';
 import { useInView } from '../hooks/useInView';
+import nearRegionalCenters from '../assets/near-regionalc-centers.png';
 
 const centers = [
   { city: 'Lahore (Head Office)', phone: '+92 42 1234567', address: '23-B, Main Boulevard, Gulberg III, Lahore', hours: 'Mon–Sat: 9AM–6PM' },
@@ -85,7 +86,7 @@ export default function Contact() {
             </div>
             <div className="hidden md:block">
               <img
-                src="/src/assets/near-regionalc-centers.png"
+                src={nearRegionalCenters}
                 alt="S3 Solar regional service centers across Pakistan"
                 className="w-full h-auto rounded-lg shadow-xl object-cover"
                 loading="lazy"

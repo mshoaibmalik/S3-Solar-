@@ -2,6 +2,7 @@ import React from 'react';
 import { Badge } from '../../components/ui/Badge';
 import { Card } from '../../components/ui/Card';
 import { useInView } from '../../hooks/useInView';
+import CISolutionsPage from '../../assets/C&I-solutions-page.png';
 
 export default function Solutions() {
   const [ref, visible] = useInView();
@@ -11,7 +12,7 @@ export default function Solutions() {
       <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
         <div className="absolute inset-0">
           <img
-            src="/src/assets/C&I-solutions-page.png"
+            src={CISolutionsPage}
             alt="C&I solar solutions"
             className="w-full h-full object-cover"
             loading="eager"

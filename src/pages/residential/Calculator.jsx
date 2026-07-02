@@ -2,6 +2,7 @@ import React from 'react';
 import { ROICalculator } from '../../components/calculator/ROICalculator';
 import { Badge } from '../../components/ui/Badge';
 import { useInView } from '../../hooks/useInView';
+import roiCalculatorHero from '../../assets/roi-calculator-hero.png';
 
 export default function CalculatorPage() {
   const [ref, visible] = useInView();
@@ -14,7 +15,7 @@ export default function CalculatorPage() {
       <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
         <div className="absolute inset-0">
           <img
-            src="/src/assets/roi-calculator-hero.png"
+            src={roiCalculatorHero}
             alt="Solar ROI calculator"
             className="w-full h-full object-cover"
             loading="eager"

@@ -2,6 +2,7 @@ import React from 'react';
 import { Badge } from '../../components/ui/Badge';
 import { SpecTable } from '../../components/ui/SpecTable';
 import { useInView } from '../../hooks/useInView';
+import caseStudiesHero from '../../assets/case-studies-hero.png';
 
 const cases = [
   { name: '100kW Textile Mill', location: 'Faisalabad', pre: 'PKR 850,000/mo', post: 'PKR 310,000/mo', payback: '3.2 yr', size: '100 kW', type: 'Grid-Tied' },
@@ -17,8 +18,17 @@ export default function CaseStudies() {
 
   return (
     <main>
-      <section ref={ref} className={`py-14 md:py-20 bg-gradient-to-br from-maroon-800 to-maroon-700 text-white animate-inview ${visible ? 'visible' : ''}`}>
-        <div className="max-w-container mx-auto px-6">
+      <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
+        <div className="absolute inset-0">
+          <img
+            src={caseStudiesHero}
+            alt="Case studies hero"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
           <div className="max-w-3xl">
             <Badge tone="accent" variant="solid" className="mb-4">Case Studies</Badge>
             <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight">

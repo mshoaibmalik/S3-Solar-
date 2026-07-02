@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Badge } from '../../components/ui/Badge';
 import { Card } from '../../components/ui/Card';
 import { useInView } from '../../hooks/useInView';
+import commercialSolarPageHero from '../../assets/commercial-solar-page-hero.png';
+import commercialSolarSection from '../../assets/commercial-solar-section.png';
 
 export default function CommercialOverview() {
   const [ref, visible] = useInView();
@@ -12,7 +14,7 @@ export default function CommercialOverview() {
       <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
         <div className="absolute inset-0">
           <img
-            src="/src/assets/commercial-solar-page-hero.png"
+            src={commercialSolarPageHero}
             alt="Commercial solar installation"
             className="w-full h-full object-cover"
             loading="eager"
@@ -36,12 +38,12 @@ export default function CommercialOverview() {
         <div className="max-w-container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div>
-              <img
-                src="/src/assets/commercial-solar-section.png"
-                alt="Commercial solar panel installation"
-                className="w-full h-auto rounded-lg shadow-xl object-cover"
-                loading="lazy"
-              />
+          <img
+            src={commercialSolarSection}
+            alt="Commercial solar panel installation"
+            className="w-full h-auto rounded-lg shadow-xl object-cover"
+            loading="lazy"
+          />
             </div>
             <div>
               <h2 className="font-display font-bold text-3xl tracking-tight text-slate-900 mb-4">Industrial-Grade Solar Solutions</h2>

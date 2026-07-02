@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Badge } from '../../components/ui/Badge';
 import { Card } from '../../components/ui/Card';
 import { useInView } from '../../hooks/useInView';
+import systemsHero from '../../assets/systems-hero.png';
+import residentialSolarsSection from '../../assets/residential-solars-section.jpg';
 
 export default function ResidentialOverview() {
   const [ref, visible] = useInView();
@@ -12,7 +14,7 @@ export default function ResidentialOverview() {
       <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
         <div className="absolute inset-0">
           <img
-            src="/src/assets/systems-hero.png"
+            src={systemsHero}
             alt="Residential solar systems"
             className="w-full h-full object-cover"
             loading="eager"
@@ -37,7 +39,7 @@ export default function ResidentialOverview() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div>
               <img
-                src="/src/assets/residential-solars-section.jpg"
+                src={residentialSolarsSection}
                 alt="Residential solar panel installation"
                 className="w-full h-auto rounded-lg shadow-xl object-cover"
                 loading="lazy"

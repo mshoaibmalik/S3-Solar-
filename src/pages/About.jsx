@@ -1,6 +1,9 @@
 import React from 'react';
 import { Badge } from '../components/ui/Badge';
 import { useInView } from '../hooks/useInView';
+import aboutHero from '../assets/about-hero.png';
+import belowCertificate from '../assets/below-certificate.png';
+import besideTimeline from '../assets/beside-timeline.png';
 
 export default function About() {
   const [ref, visible] = useInView();
@@ -10,7 +13,7 @@ export default function About() {
       <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
         <div className="absolute inset-0">
           <img
-            src="/src/assets/about-hero.png"
+            src={aboutHero}
             alt="S3 Solar team installing solar panels"
             className="w-full h-full object-cover"
             loading="eager"
@@ -55,7 +58,7 @@ export default function About() {
       <section className="py-14 bg-white animate-inview">
         <div className="max-w-container mx-auto px-6">
           <img
-            src="/src/assets/below-certificate.png"
+            src={belowCertificate}
             alt="S3 Solar certifications and achievements"
             className="w-full h-auto rounded-lg shadow-lg object-cover mb-12"
             loading="lazy"
@@ -83,7 +86,7 @@ export default function About() {
             </div>
             <div className="hidden md:block">
               <img
-                src="/src/assets/beside-timeline.png"
+                src={besideTimeline}
                 alt="S3 Solar company timeline and growth"
                 className="w-full h-auto rounded-lg shadow-xl object-cover"
                 loading="lazy"

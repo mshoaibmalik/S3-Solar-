@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Badge } from '../ui/Badge';
 import { useInView } from '../../hooks/useInView';
+import homeHero from '../../assets/home-hero.png';
 
 export function HeroSection() {
   const [ref, visible] = useInView({ threshold: 0.2 });
@@ -10,7 +11,7 @@ export function HeroSection() {
     <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white overflow-hidden animate-inview ${visible ? 'visible' : ''}`}>
       <div className="absolute inset-0">
         <img
-          src="/src/assets/home-hero.png"
+          src={homeHero}
           alt="Solar panel installation on residential rooftop"
           className="w-full h-full object-cover"
           loading="eager"

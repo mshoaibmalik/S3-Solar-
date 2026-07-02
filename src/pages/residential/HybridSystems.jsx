@@ -2,6 +2,8 @@ import React from 'react';
 import { Badge } from '../../components/ui/Badge';
 import { Card } from '../../components/ui/Card';
 import { useInView } from '../../hooks/useInView';
+import hybridBatteryHero from '../../assets/hybrid-battery-hero.png';
+import belowBatteryComparision from '../../assets/below-battery-comparision.png';
 
 export default function HybridSystems() {
   const [ref, visible] = useInView();
@@ -11,7 +13,7 @@ export default function HybridSystems() {
       <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
         <div className="absolute inset-0">
           <img
-            src="/src/assets/hybrid-battery-hero.png"
+            src={hybridBatteryHero}
             alt="Hybrid battery solar system"
             className="w-full h-full object-cover"
             loading="eager"
@@ -34,7 +36,7 @@ export default function HybridSystems() {
       <section className="py-14 bg-white animate-inview">
         <div className="max-w-container mx-auto px-6">
           <img
-            src="/src/assets/below-battery-comparision.png"
+            src={belowBatteryComparision}
             alt="Battery comparison and specifications"
             className="w-full h-auto rounded-lg shadow-lg object-cover mb-12"
             loading="lazy"
