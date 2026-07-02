@@ -15,6 +15,7 @@ export function Logo({
 }) {
   const wordColor = tone === 'mono-light' ? '#FFFFFF' : '#14171C';
   const accentColor = tone === 'brand' ? '#CFA53C' : 'inherit';
+  const marooncolor = tone === 'brand' ? '#811424' : 'inherit';
 
   const Mark = (
     <img
@@ -40,7 +41,7 @@ export function Logo({
       color: wordColor,
       whiteSpace: 'nowrap',
     }}>
-      {showFullName ? 'Sazuddin Solar (Pvt) Ltd' : <><span style={{ color: accentColor }}>S</span><span style={{ color: accentColor }}>3</span><span style={{ fontWeight: 500, marginLeft: '0.12em', letterSpacing: '-0.01em' }}>Solar</span></>}
+      {showFullName ? 'Sazuddin Solar (Pvt) Ltd' : <><span style={{ color: marooncolor }}>S</span><span style={{ color: accentColor }}>3</span><span style={{ fontWeight: 500, marginLeft: '0.12em', letterSpacing: '-0.01em' }}>Solar</span></>}
     </span>
   );
 
