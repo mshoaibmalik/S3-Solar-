@@ -1,5 +1,5 @@
 /**
- * S3 Solar — 2026 NEPRA Smart ROI Calculator Logic
+ * Sazuddin Solar System (Pvt) Ltd — 2026 NEPRA Smart ROI Calculator Logic
  *
  * Ground truths:
  * - Average grid import cost: PKR 55/kWh (inclusive of base rates, surcharges, slab taxes)

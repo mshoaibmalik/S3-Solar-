@@ -30,7 +30,7 @@ export default function Tier1PanelsVsCounterfeits() {
             <div className="flex gap-3"><span className="font-bold text-gold-600">2.</span> <span><strong>Inspect the junction box</strong> — Authentic panels have sealed, branded junction boxes with bypass diodes. Counterfeits often use generic boxes with poor sealing.</span></div>
             <div className="flex gap-3"><span className="font-bold text-gold-600">3.</span> <span><strong>Verify the data sheet</strong> — Request the official datasheet and compare electrical ratings (Vmp, Imp, Voc, Isc) against the panel's label. Mismatches indicate counterfeits.</span></div>
             <div className="flex gap-3"><span className="font-bold text-gold-600">4.</span> <span><strong>Check the frame and glass</strong> — Tier-1 panels use anodized aluminum frames and tempered glass with anti-reflective coating. Counterfeits often have rough edges and uncoated glass.</span></div>
-            <div className="flex gap-3"><span className="font-bold text-gold-600">5.</span> <span><strong>Buy from authorized distributors</strong> — S3 Solar sources exclusively from manufacturer-authorized distributors with direct factory warranties.</span></div>
+            <div className="flex gap-3"><span className="font-bold text-gold-600">5.</span> <span><strong>Buy from authorized distributors</strong> — Sazuddin Solar System (Pvt) Ltd sources exclusively from manufacturer-authorized distributors with direct factory warranties.</span></div>
           </div>
 
           <h2 className="font-display font-bold text-2xl text-slate-900 mt-8">Performance comparison</h2>

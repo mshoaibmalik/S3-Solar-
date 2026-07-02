@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Logo variant="lockup" size={28} tone="mono-light" showTagline />
+            <Logo variant="lockup" size={36} tone="mono-light" showTagline />
             <p className="mt-4 text-sm text-slate-400 leading-relaxed">
               Premium solar installation across Pakistan — residential rooftop hybrid systems and turnkey commercial infrastructure.
             </p>
@@ -59,7 +59,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 flex-shrink-0 text-gold-500"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                <span>info@s3solar.pk</span>
+                <span>info@sazuddinsolar.pk</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 flex-shrink-0 text-gold-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} S3 Solar — Sazuddin Solar System. All rights reserved.
+            &copy; {new Date().getFullYear()} Sazuddin Solar System (Pvt) Ltd. All rights reserved.
           </p>
           <div className="flex gap-4 text-xs text-slate-500">
             <Link to="/about" className="hover:text-white transition-colors">About</Link>

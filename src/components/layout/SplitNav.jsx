@@ -54,7 +54,7 @@ export function SplitNav() {
       <div className="max-w-container mx-auto flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <Logo variant="lockup" size={30} tone="brand" />
+          <Logo variant="lockup" size={40} tone="brand" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -188,14 +188,6 @@ export function SplitNav() {
             Contact
           </Link>
         </nav>
-
-        {/* CTA - desktop */}
-        <Link
-          to="/residential/calculator"
-          className="hidden md:inline-flex items-center h-8 px-3.5 bg-maroon-700 text-white text-sm font-semibold rounded-md hover:bg-maroon-800 active:bg-maroon-900 transition-colors duration-200 whitespace-nowrap"
-        >
-          Free home survey
-        </Link>
 
         {/* Mobile menu button */}
         <button
@@ -350,14 +342,6 @@ export function SplitNav() {
             </Link>
           </nav>
 
-          {/* CTA - mobile */}
-          <Link
-            to="/residential/calculator"
-            onClick={() => setMobileOpen(false)}
-            className="block w-full text-center py-3 px-4 bg-maroon-700 text-white text-base font-semibold rounded-md hover:bg-maroon-800 active:bg-maroon-900 transition-colors duration-200"
-          >
-            Free home survey
-          </Link>
         </div>
       </div>
     </header>

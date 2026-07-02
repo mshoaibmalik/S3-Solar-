@@ -21,7 +21,6 @@ export function SpecMatrix() {
           tabs={[
             { value: 'inv', label: 'Inverter Profiles' },
             { value: 'pan', label: 'Panel Efficiency' },
-            { value: 'bat', label: 'Battery Systems' },
           ]}
           value={tab}
           onChange={setTab}
@@ -62,24 +61,6 @@ export function SpecMatrix() {
                 { label: 'Temp Coefficient', cells: ['-0.35%/°C', '-0.30%/°C', '-0.28%/°C'] },
                 { label: 'Cell Type', cells: ['Mono PERC', 'N-Type TOPCon', 'Bifacial N-Type'] },
                 { label: 'Warranty', cells: ['25 yr', '30 yr', '30 yr'] },
-              ]}
-            />
-          )}
-          {tab === 'bat' && (
-            <SpecTable
-              highlightCol={2}
-              columns={[
-                { header: 'Spec' },
-                { header: 'Lithium 5.1', sub: 'Stackable' },
-                { header: 'Lithium 10.2', sub: 'Tower' },
-                { header: 'Deep-Cycle 200', sub: 'Lead-Acid' },
-              ]}
-              rows={[
-                { label: 'Capacity', cells: ['5.1 kWh', '10.2 kWh', '4.8 kWh (200Ah)'] },
-                { label: 'Depth of Discharge', cells: ['95%', '95%', '50%'] },
-                { label: 'Cycle Life', cells: ['6,000', '6,000', '1,200'] },
-                { label: 'Round-Trip Eff.', cells: ['95%', '95%', '85%'] },
-                { label: 'Warranty', cells: ['10 yr', '10 yr', '3 yr'] },
               ]}
             />
           )}

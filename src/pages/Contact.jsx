@@ -87,7 +87,7 @@ export default function Contact() {
             <div className="hidden md:block">
               <img
                 src={nearRegionalCenters}
-                alt="S3 Solar regional service centers across Pakistan"
+                alt="Sazuddin Solar System (Pvt) Ltd regional service centers across Pakistan"
                 className="w-full h-auto rounded-lg shadow-xl object-cover"
                 loading="lazy"
               />

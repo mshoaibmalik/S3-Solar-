@@ -48,7 +48,7 @@ export default function NetBillingExplained() {
             <li>DISCO installs bi-directional meter</li>
             <li>System commissioning and net billing commencement</li>
           </ol>
-          <p className="mt-4">S3 Solar manages this entire process on your behalf. Typical timeline: 4–6 weeks from application to commissioning.</p>
+          <p className="mt-4">Sazuddin Solar System (Pvt) Ltd manages this entire process on your behalf. Typical timeline: 4–6 weeks from application to commissioning.</p>
         </div>
       </article>
     </main>

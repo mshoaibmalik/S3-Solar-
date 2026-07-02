@@ -48,7 +48,7 @@ export default function NetBilling() {
                 <li>Bi-directional meter installation by DISCO</li>
                 <li>Net billing agreement execution</li>
               </ol>
-              <p className="mt-3">S3 Solar manages the entire concurrence process on your behalf — from application submission to meter commissioning.</p>
+              <p className="mt-3">Sazuddin Solar System (Pvt) Ltd manages the entire concurrence process on your behalf — from application submission to meter commissioning.</p>
             </div>
           </div>
         </div>
