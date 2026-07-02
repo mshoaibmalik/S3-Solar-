@@ -33,9 +33,9 @@ export function Logo({
   const Word = (
     <span style={{
       fontFamily: 'Archivo, ui-sans-serif, system-ui, sans-serif',
-      fontWeight: 700,
+      fontWeight: 600,
       letterSpacing: '-0.03em',
-      fontSize: size * 0.62,
+      fontSize: size * 0.5,
       lineHeight: 1,
       color: wordColor,
       whiteSpace: 'nowrap',

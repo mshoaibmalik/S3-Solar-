@@ -54,7 +54,7 @@ export function SplitNav() {
       <div className="max-w-container mx-auto flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <Logo variant="lockup" size={40} tone="brand" />
+          <Logo variant="lockup" size={50} tone="brand" />
         </Link>
 
         {/* Desktop Navigation */}
