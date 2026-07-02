@@ -7,12 +7,17 @@ export function HeroSection() {
   const [ref, visible] = useInView({ threshold: 0.2 });
 
   return (
-    <section ref={ref} className={`relative bg-gradient-to-br from-maroon-800 to-maroon-700 text-white overflow-hidden animate-inview ${visible ? 'visible' : ''}`}>
-      <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white blur-3xl" />
-        <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-gold-500 blur-3xl" />
+    <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white overflow-hidden animate-inview ${visible ? 'visible' : ''}`}>
+      <div className="absolute inset-0">
+        <img
+          src="/src/assets/home-hero.png"
+          alt="Solar panel installation on residential rooftop"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
-      <div className="relative max-w-container mx-auto px-6 py-16 md:py-24">
+      <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
         <div className="max-w-3xl">
           <Badge tone="accent" variant="solid" className="mb-4">NEPRA Certified · AEDB Approved</Badge>
           <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl tracking-tighter leading-tight">

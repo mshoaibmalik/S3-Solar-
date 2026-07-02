@@ -8,8 +8,17 @@ export default function HybridSystems() {
 
   return (
     <main>
-      <section ref={ref} className={`py-14 md:py-20 bg-gradient-to-br from-maroon-800 to-maroon-700 text-white animate-inview ${visible ? 'visible' : ''}`}>
-        <div className="max-w-container mx-auto px-6">
+      <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
+        <div className="absolute inset-0">
+          <img
+            src="/src/assets/hybrid-battery-hero.png"
+            alt="Hybrid battery solar system"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
           <div className="max-w-3xl">
             <Badge tone="accent" variant="solid" className="mb-4">Hybrid + Battery Systems</Badge>
             <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight">
@@ -24,6 +33,12 @@ export default function HybridSystems() {
 
       <section className="py-14 bg-white animate-inview">
         <div className="max-w-container mx-auto px-6">
+          <img
+            src="/src/assets/below-battery-comparision.png"
+            alt="Battery comparison and specifications"
+            className="w-full h-auto rounded-lg shadow-lg object-cover mb-12"
+            loading="lazy"
+          />
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="p-6 border-t-4 border-t-gold-500">
               <h3 className="font-display font-semibold text-lg text-slate-900 mb-3">Lithium Iron Phosphate (LiFePO₄)</h3>

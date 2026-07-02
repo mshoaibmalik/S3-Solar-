@@ -7,14 +7,23 @@ export default function About() {
 
   return (
     <main>
-      <section ref={ref} className={`py-14 md:py-20 bg-white animate-inview ${visible ? 'visible' : ''}`}>
-        <div className="max-w-container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
-            <Badge tone="accent" className="mb-4">About S3 Solar</Badge>
-            <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight text-slate-900 mb-6">
+      <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
+        <div className="absolute inset-0">
+          <img
+            src="/src/assets/about-hero.png"
+            alt="S3 Solar team installing solar panels"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
+          <div className="max-w-3xl">
+            <Badge tone="accent" variant="solid" className="mb-4">About S3 Solar</Badge>
+            <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight">
               Engineering Pakistan's solar future
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
+            <p className="mt-4 text-lg text-white/80 leading-relaxed max-w-2xl">
               S3 Solar (Sazuddin Solar System) is a NEPRA-certified and AEDB-approved solar EPC contractor operating across Pakistan. 
               We design, supply, install, and maintain premium solar energy systems for residential homeowners and commercial & industrial enterprises.
             </p>
@@ -45,25 +54,41 @@ export default function About() {
 
       <section className="py-14 bg-white animate-inview">
         <div className="max-w-container mx-auto px-6">
+          <img
+            src="/src/assets/below-certificate.png"
+            alt="S3 Solar certifications and achievements"
+            className="w-full h-auto rounded-lg shadow-lg object-cover mb-12"
+            loading="lazy"
+          />
           <h2 className="font-display font-bold text-2xl tracking-tight text-slate-900 mb-8 text-center">Partnership Timeline</h2>
-          <div className="max-w-2xl mx-auto space-y-6">
-            {[
-              { year: '2018', event: 'Founded in Lahore. First 50 residential installations completed.' },
-              { year: '2020', event: 'Crossed 500 kW cumulative capacity. AEDB accreditation secured.' },
-              { year: '2022', event: 'Expanded into C&I segment. 2 MW textile mill project in Faisalabad.' },
-              { year: '2024', event: 'Surpassed 2,000 systems and 12 MW deployed across 8 cities.' },
-              { year: '2026', event: '18.42 MW deployed. NEPRA net-billing certified. Active across Pakistan.' },
-            ].map((m, i) => (
-              <div key={i} className="flex gap-4 items-start">
-                <div className="flex-shrink-0 w-16 text-right">
-                  <span className="font-mono text-sm font-bold text-maroon-700">{m.year}</span>
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
+            <div className="max-w-2xl mx-auto md:mx-0 space-y-6">
+              {[
+                { year: '2018', event: 'Founded in Lahore. First 50 residential installations completed.' },
+                { year: '2020', event: 'Crossed 500 kW cumulative capacity. AEDB accreditation secured.' },
+                { year: '2022', event: 'Expanded into C&I segment. 2 MW textile mill project in Faisalabad.' },
+                { year: '2024', event: 'Surpassed 2,000 systems and 12 MW deployed across 8 cities.' },
+                { year: '2026', event: '18.42 MW deployed. NEPRA net-billing certified. Active across Pakistan.' },
+              ].map((m, i) => (
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-16 text-right">
+                    <span className="font-mono text-sm font-bold text-maroon-700">{m.year}</span>
+                  </div>
+                  <div className="w-px h-full bg-slate-200 relative top-2">
+                    <div className="w-2 h-2 rounded-full bg-maroon-700 absolute -left-[3.5px]" />
+                  </div>
+                  <p className="text-sm text-slate-600">{m.event}</p>
                 </div>
-                <div className="w-px h-full bg-slate-200 relative top-2">
-                  <div className="w-2 h-2 rounded-full bg-maroon-700 absolute -left-[3.5px]" />
-                </div>
-                <p className="text-sm text-slate-600">{m.event}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="hidden md:block">
+              <img
+                src="/src/assets/beside-timeline.png"
+                alt="S3 Solar company timeline and growth"
+                className="w-full h-auto rounded-lg shadow-xl object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>

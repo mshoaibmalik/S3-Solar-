@@ -9,8 +9,17 @@ export default function CommercialOverview() {
 
   return (
     <main>
-      <section ref={ref} className={`py-14 md:py-20 bg-gradient-to-br from-maroon-800 to-maroon-700 text-white animate-inview ${visible ? 'visible' : ''}`}>
-        <div className="max-w-container mx-auto px-6">
+      <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
+        <div className="absolute inset-0">
+          <img
+            src="/src/assets/commercial-solar-page-hero.png"
+            alt="Commercial solar installation"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
           <div className="max-w-3xl">
             <Badge tone="accent" variant="solid" className="mb-4">Commercial & Industrial</Badge>
             <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight">
@@ -25,6 +34,25 @@ export default function CommercialOverview() {
 
       <section className="py-14 bg-white animate-inview">
         <div className="max-w-container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div>
+              <img
+                src="/src/assets/commercial-solar-section.png"
+                alt="Commercial solar panel installation"
+                className="w-full h-auto rounded-lg shadow-xl object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-3xl tracking-tight text-slate-900 mb-4">Industrial-Grade Solar Solutions</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                From factory rooftops to ground-mount arrays, we deliver turnkey solar infrastructure that reduces operational expenditure and provides predictable energy costs for commercial and industrial operations.
+              </p>
+              <p className="text-slate-600 leading-relaxed">
+                Our systems are engineered for Pakistan's industrial environment, with robust mounting structures, dust-resistant designs, and comprehensive maintenance packages.
+              </p>
+            </div>
+          </div>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="p-6">
               <h3 className="font-display font-semibold text-lg text-slate-900 mb-2">50 kW – 1 MW+ Systems</h3>

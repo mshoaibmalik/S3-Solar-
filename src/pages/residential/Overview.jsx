@@ -9,8 +9,17 @@ export default function ResidentialOverview() {
 
   return (
     <main>
-      <section ref={ref} className={`py-14 md:py-20 bg-gradient-to-br from-maroon-800 to-maroon-700 text-white animate-inview ${visible ? 'visible' : ''}`}>
-        <div className="max-w-container mx-auto px-6">
+      <section ref={ref} className={`relative min-h-[500px] md:min-h-[600px] flex items-center text-white animate-inview ${visible ? 'visible' : ''}`}>
+        <div className="absolute inset-0">
+          <img
+            src="/src/assets/systems-hero.png"
+            alt="Residential solar systems"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="relative max-w-container mx-auto px-6 py-16 md:py-24 w-full">
           <div className="max-w-3xl">
             <Badge tone="accent" variant="solid" className="mb-4">Residential Solar</Badge>
             <h1 className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight">
@@ -25,6 +34,25 @@ export default function ResidentialOverview() {
 
       <section className="py-14 bg-white animate-inview">
         <div className="max-w-container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div>
+              <img
+                src="/src/assets/residential-solars-section.jpg"
+                alt="Residential solar panel installation"
+                className="w-full h-auto rounded-lg shadow-xl object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-3xl tracking-tight text-slate-900 mb-4">Premium Rooftop Solar</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                High-efficiency Tier-1 solar panels paired with premium hybrid inverters and lithium battery storage. Engineered for Pakistan's climate with dust-resistant coatings and robust mounting systems.
+              </p>
+              <p className="text-slate-600 leading-relaxed">
+                Every system is custom-designed for your roof orientation, shading profile, and energy consumption pattern to maximize your return on investment.
+              </p>
+            </div>
+          </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: 'Hybrid Rooftop Systems', desc: 'Solar panels + hybrid inverter + lithium battery. Daytime solar powers your home while charging batteries for evening use.', icon: '☀️' },

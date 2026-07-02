@@ -64,8 +64,9 @@ export default function Contact() {
           </div>
 
           <h2 className="font-display font-bold text-2xl tracking-tight text-slate-900 mb-8 text-center">Regional Service Centers</h2>
-          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto animate-inview">
-            {centers.map((c, i) => (
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 animate-inview">
+              {centers.map((c, i) => (
   <div
     key={i}
     className={`
@@ -81,6 +82,15 @@ export default function Contact() {
     <p className="text-xs text-slate-400 mt-1">{c.hours}</p>
   </div>
 ))}
+            </div>
+            <div className="hidden md:block">
+              <img
+                src="/src/assets/near-regionalc-centers.png"
+                alt="S3 Solar regional service centers across Pakistan"
+                className="w-full h-auto rounded-lg shadow-xl object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
