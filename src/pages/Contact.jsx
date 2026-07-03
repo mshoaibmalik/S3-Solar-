@@ -8,7 +8,7 @@ const centers = [
   { city: 'Karachi', phone: '+92 21 1234567', address: 'Suite 5, Business Centre, Clifton, Karachi', hours: 'Mon–Sat: 9AM–6PM' },
   { city: 'Islamabad', phone: '+92 51 1234567', address: 'Office 12, Blue Area, Islamabad', hours: 'Mon–Sat: 9AM–6PM' },
   { city: 'Faisalabad', phone: '+92 41 1234567', address: '3rd Floor, Mall Plaza, Faisalabad', hours: 'Mon–Sat: 9AM–6PM' },
-  { city: 'Multan', phone: '+92 61 1234567', address: '12-A, Abdali Road, Multan', hours: 'Mon–Sat: 9AM–6PM' },
+  // { city: 'Multan', phone: '+92 61 1234567', address: '12-A, Abdali Road, Multan', hours: 'Mon–Sat: 9AM–6PM' },
 ];
 
 export default function Contact() {
@@ -66,7 +66,7 @@ export default function Contact() {
 
           <h2 className="font-display font-bold text-2xl tracking-tight text-slate-900 mb-8 text-center">Regional Service Centers</h2>
           <div className="grid md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
-            <div className="grid sm:grid-cols-2 md:grid-cols-1 gap-4 animate-inview">
+            <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4 animate-inview">
               {centers.map((c, i) => (
                 <div
                   key={i}
